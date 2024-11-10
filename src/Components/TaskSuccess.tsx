@@ -1,5 +1,4 @@
 import React, { useContext } from 'react';
-import { FiCheck } from 'react-icons/fi';
 import { TaskContext } from '../ContextAPI/taskContext';
 import taskTickImg from '../Assets/Tick-Square.png'
 const TaskSuccess = () => {
