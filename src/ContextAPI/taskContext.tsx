@@ -14,21 +14,6 @@ interface TaskType {
     status: string;
 }
 
-interface TaskContextType {
-    alltasks: TaskType[];
-    setallTasks: React.Dispatch<React.SetStateAction<TaskType[]>>;
-    completedTask: TaskType[];
-    setcompletedTask: React.Dispatch<React.SetStateAction<TaskType[]>>;
-    toDoTask: TaskType[];
-    settoDoTask: React.Dispatch<React.SetStateAction<TaskType[]>>;
-    expireTask: TaskType[];
-    setexpireTask: React.Dispatch<React.SetStateAction<TaskType[]>>;
-    inprogressTask: TaskType[];
-    setinprogressTask: React.Dispatch<React.SetStateAction<TaskType[]>>;
-    openAddTask: boolean;
-    setopenAddTask: React.Dispatch<React.SetStateAction<boolean>>;
-    addTask: (data: { title: string; desc: string; deadline: string }) => Promise<void>;
-}
 
 const TaskProvider: FC<TaskProviderProps> = ({ children }) => {
     const [alltasks, setallTasks] = useState<TaskType[]>([]);
