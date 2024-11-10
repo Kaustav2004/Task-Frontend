@@ -6,7 +6,7 @@ const TaskSuccess = () => {
   return (
     <div className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50">
     <div className="bg-white rounded-[30px] shadow-lg p-6 w-[315px] text-center flex justify-center items-center flex-col gap-2">
-      <img src={taskTickImg}></img>
+      <img src={taskTickImg} alt='taskTickImg'></img>
       <p className="text-lg font-poppins font-medium text-gray-800">new task has been created 
       successfully</p>
       <button
